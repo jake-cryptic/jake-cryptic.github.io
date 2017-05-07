@@ -1,0 +1,340 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Geography Case Studies</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style type="text/css">
+		body,table{font-size:1.2em}#case_study_txt{font-size:1.1em;}#casestudies,table{width:100%;text-align:center}#casestudies,body,table{text-align:center}.pt,body{font-weight:100;margin:0}.modal,.modal-content{position:absolute;height:100vh}body{padding:0;font-family:sans-serif}table{border:none;border-collapse:collapse}th{font-size:1.4em;padding:10px 0;font-weight:100}td{padding:5px 0}.qs{font-size:1.2em;font-weight:600;}.modal-body{text-align:left;}.modal-body,.modal-header{padding:2px 16px}#cs_nm{font-size:1.7em;}tr{transition:.6s ease-in-out background,.2s ease-in-out color;cursor:pointer}tr:hover{background:rgba(0,0,0,.7);color:#fff}.t1{background-color:rgba(255,0,0,.4)}.t2{background-color:rgba(0,255,0,.4)}.t3{background-color:rgba(0,0,255,.4)}.pt{border-bottom:1px solid #1A1A1A}.modal{display:none;z-index:1;left:0;top:0;width:100vw;overflow:auto;background-color:#000;background-color:rgba(0,0,0,.4);-webkit-animation-name:fadeIn;-webkit-animation-duration:.6s;animation-name:fadeIn;animation-duration:.6s}.modal-content{bottom:0;background-color:#fefefe;width:100%;-webkit-animation-name:slideIn;-webkit-animation-duration:.6s;animation-name:slideIn;animation-duration:.6s}#close_cs{color:#fff;float:right;font-size:2.5em;font-weight:700}#close_cs:focus,#close_cs:hover{color:#000;text-decoration:none;cursor:pointer}.modal-header{background-color:#35e649;color:#fff}.modal-body{overflow:scroll;}@-webkit-keyframes slideIn{from{bottom:-300px;opacity:0}to{bottom:0;opacity:1}}@keyframes slideIn{from{bottom:-300px;opacity:0}to{bottom:0;opacity:1}}@-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+		@media screen and (max-width:600px){
+			body,table {font-size:1em;}
+			.modal-header{height:7.5vh;}
+			.modal-body{height:92.5vh;}
+		}
+		</style>
+	</head>
+	<body>
+		<div id="page">
+			<h1 class="pt">Geography Case Studies</h1>
+			<table id="casestudies">
+				<thead>
+					<tr>
+						<th>Theme</th>
+						<th>Exam Text</th>
+						<th>Case Study</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="case_click t1" data-opens="qol_cardiff">
+						<td>1</td>
+						<td>A town of city where there are variations in quality of life</td>
+						<td id="t_qol_cardiff">Quality of life in Cardiff</td>
+					</tr>
+					<tr class="case_click t1" data-opens="shopping_cardiff">
+						<td>1</td>
+						<td>Distribution of shopping services across an urban area</td>
+						<td id="t_shopping_cardiff">Shopping in Cardiff</td>
+					</tr>
+					<tr class="case_click t1" data-opens="bay_cardiff">
+						<td>1</td>
+						<td>An area of a town of city that has changed recently</td>
+						<td id="t_bay_cardiff">Cardiff Bay</td>
+					</tr>
+					<tr class="case_click t1" data-opens="migration_brazil">
+						<td>1</td>
+						<td>Rural to urban migration</td>
+						<td id="t_migration_brazil">Sao Paulo, Brazil</td>
+					</tr>
+					<tr class="case_click t1" data-opens="cwrtygollen">
+						<td>1</td>
+						<td>A planning issue in a residential area</td>
+						<td id="t_cwrtygollen">Cwrt-Y-Gollen</td>
+					</tr>
+					<tr class="case_click t1" data-opens="tourism_crickhowell">
+						<td>1</td>
+						<td>A rural area where the environment is under pressure from visitors</td>
+						<td id="t_tourism_crickhowell">Crickhowell</td>
+					</tr>
+					<tr class="case_click t2" data-opens="boscastle_flood">
+						<td>2</td>
+						<td>An area that has suffered from a river flood</td>
+						<td id="t_boscastle_flood">Boscastle</td>
+					</tr>
+					<tr class="case_click t2" data-opens="boscastle_mgmt">
+						<td>2</td>
+						<td>Flood prevention along a river</td>
+						<td id="t_boscastle_mgmt">Boscastle River</td>
+					</tr>
+					<tr class="case_click t2" data-opens="holderness_coast">
+						<td>2</td>
+						<td>A named coastal area</td>
+						<td id="t_holderness_coast">Holderness Coast</td>
+					</tr>
+					<tr class="case_click t2" data-opens="katrina_hurricane">
+						<td>2</td>
+						<td>An extreme weather event</td>
+						<td id="t_katrina_hurricane">Hurricane Katrina</td>
+					</tr>
+					<tr class="case_click t2" data-opens="amazon_rainforest">
+						<td>2</td>
+						<td>A climate you have studied</td>
+						<td id="t_amazon_rainforest">Amazon Rainforest</td>
+					</tr>
+					<tr class="case_click t2" data-opens="desertification">
+						<td>2</td>
+						<td>Desertification</td>
+						<td id="t_desertification">Desertification</td>
+					</tr>
+					<tr class="case_click t3" data-opens="ebbwvale">
+						<td>3</td>
+						<td>A secondary or tertiary industry which has changed its location</td>
+						<td id="t_ebbwvale">Ebbw Vale Steelworks</td>
+					</tr>
+					<tr class="case_click t3" data-opens="continental_teaves">
+						<td>3</td>
+						<td>For a multinational company that you have studied</td>
+						<td id="t_continental_teaves">Continental Teves</td>
+					</tr>
+					<tr class="case_click t3" data-opens="tourism_kenya">
+						<td>3</td>
+						<td>An economic activity and its impact on the environment</td>
+						<td id="t_tourism_kenya">Tourism in Kenya</td>
+					</tr>
+					<tr class="case_click t3" data-opens="climate_change">
+						<td>3</td>
+						<td>Climate Change</td>
+						<td id="t_climate_change">Climate Change</td>
+					</tr>
+					<tr class="case_click t3" data-opens="katse_dam">
+						<td>3</td>
+						<td>A water supply issue crossing international boundaries</td>
+						<td id="t_katse_dam">Katse Dam</td>
+					</tr>
+					<tr class="case_click t3" data-opens="international_aid">
+						<td>3</td>
+						<td>International aid</td>
+						<td id="t_international_aid">South East Africa, Kenya</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="case_study_txt" style="display:none">
+				<div id="qol_cardiff">
+					<span class="qs">
+						1. Name the area;<br />
+						2. Describe how the quality of life varies in different parts of the town or city;<br />
+						3. Explain why quality of life varies between these places.<br />
+					</span>
+					<p class="csd">
+						The city is Cardiff - capital city of Wales - in the South West of the UK.<br /><br />
+						Four main housing areas have been studied with varying qualities of life.
+						<ul>
+							<li>
+							Pontprenau had the highest <abbr title="Quality of Life">QOL</abbr> because 78% of the residents have good health. This means that they live
+							healthier, happier lives, thanks to the public parksand large green gardens. Among <abbr title="16-24 year olds">young people</abbr> (16-24 year olds)
+							only 24% of them are unemployed.
+							</li>
+							<li>
+							Ely has a lower <abbr title="Quality of Life">QOL</abbr>. Its unemployment level is at a higher level than the average in Cardiff meaning there is less money in the area,
+							reducing its <abbr title="Quality of Life">QOL</abbr>. However there is a strong sense of community in the area, they also have ??? gardens.
+							</li>
+							<li>
+							Cardiff Bay is an area that has had huge redevelopments; with new houses, flats and shops, crime and unemployment rates have fell significantly.
+							However, parking is com??? and open space is limited, lowering <abbr title="Quality of Life">QOL</abbr>.
+							</li>
+							<li>
+							Butetown is full of terraced houses and flats meaning residents have little space. Parking is only on the road, and there are few gardens in the area.
+							A huge 36% of the area's population have no qualifications reducing employability, many avaiable ??? ????, life quality.
+							</li>
+						</ul>
+						<details><summary>Case Study Information</summary><p>Written by Rhys Goodwin</p><p>[8/8 Marks]</p></details>
+					</p>
+				</div>
+				<div id="shopping_cardiff">
+					<span class="qs">
+						1. Name an urban area;<br />
+						2. Describe how shopping services are distributed across the area;<br />
+						3. Explain why this pattern exists.<br />
+					</span>
+					<p class="csd">
+						Cardiff is the capital city of Wales, and is located in the South West of Wales.<br /><br />
+						Shopping services are distributed in the <abbr title="Central Business District">CBD</abbr> in a linear fashion because this is a pedestrianised area, so people
+						can shop freely without having to worry about their safety. Shops in retail parks are found randomly around the outskirts of Cardiff because, particularly by major
+						main roads such as the M4 and A48 because they are accessible for lots of people as they are on main roads and roundabouts. Corner shops are found randomly in the less
+						busy parts of Cardiff because these are good for locals who just need the essentials. Suburban shopping streets are spread over Cardiff because these have better
+						access as you don't have to go into the middle of the city where it's busy and there is a lot of traffic.
+						<details><summary>Case Study Information</summary><p>Written by Maisie Gray</p><p>[8/8 Marks]</p></details>
+					</p>
+				</div>
+				<div id="bay_cardiff">
+					<span class="qs">
+						1. Name the area;<br />
+						2. Describe how the area has changed;<br />
+						3. Explain why different groups of people have a range of views on the changes.<br />
+					</span>
+					<p class="csd">
+						Cardiff Bay, located in the South of Wales, has seen an urban change.<br /><br />
+						The area has changed because is used to be a large port and had a good source of coal and iron ore. There was also a site of ironworks and steelworks.
+						The docks imported tin and palm oil. They exported coal, iron, tin plate and steel. In 1913, Cardiff docks went into decline because other countries developed their own
+						resources and they began to run out of iron ore and coal.<br />In 1987 change began with the formation of the <abbr title="Cardiff Bay Development Corp.">CBDC (Cardiff Bay Development Corp.)</abbr>
+						They added restaurants, modern buildings and introduced the Red Dragon Centre where there is a cinema and bowling alley. They also build the 'Cardiff Bay Barrage' across the Cardiff Bay,
+						allowing it to fill up with water, this created a giant freshwater lake for watersports, before this, that area had been saltwater mudflats with water only occupying the bay 14 hours a day.
+						By building the barrage, Cardiff bay can now be classed as 'seaside'; allowing for construction of high quality (and higher priced) housing.<br /><br />
+						Although all of these developments seem good, many have been against it, such as the <abbr title="Royal Society for the Protection of Birds">RSPB</abbr> because the birds feed on the mudflats
+						and so wouldn't have anywhere to go when the mudflats go. Also, some locals were against it because there would be an increased risk of floods as ground water could rise by 3m. On the other hand,
+						business men will be for the plan because they can create a business in Cadiff Bay and earn lots of money due to the bay being popular and attracting many tourists who will spend money there.
+						Also, future tourists will be for the plan because it makes the area look more attractive and it will also have more shopping facilities and places to eat.
+						<details><summary>Case Study Information</summary><p>Written by Maisie Gray &amp; Rhys Goodwin</p><p>[8/8 Marks]</p></details>
+					</p>
+				</div>
+				<div id="migration_brazil">
+					<span class="qs">
+						1. Name a city to which people are moving;<br />
+						2. Explain why people leave the countryside and move to this city;<br />
+						3. Describe the problems this causes for planners in this city.<br />
+					</span>
+					<p class="csd">
+						Rural to urban migration is happening in Sao Paulo, which is located on the South East coast of Brazil.<br /><br />People moved away from the countryside because they had droughts and therefore the
+						wells ran dry and crops failed, so farmers had less stock to sell which lead to food shortages. Also they have less services in the countryside such as doctors and chemists. Villages have few
+						schools and houses often have no electricity, water or sanitation. Also, the majority of jobs involve farming paying low wages.<br />Pull factors to the city include a wide range of jobs
+						with good salaries, more infastructure and housing with electricity, a water supply and sanitaion.<br /><br />
+						An increased amount of people in the city means that there are not enough jobs for everyone, so crime and unemployment rise. Also, diseases spread quickly due to contaminated drinking water and
+						the fact there are not enough doctors. There are also not enough schools for the thousands of people arriving in the city. Land slides can also occur due to the favella's, which are illegal houses
+						that have been poorly built on steep slopes due to the lack of decent housing in the area, an example of this is in Rio.
+						<details><summary>Case Study Information</summary><p>Written by Maisie Gray</p><p>[7/8 Marks] - Should now be 8 marks</p></details>
+					</p>
+				</div>
+				<div id="cwrtygollen">
+					<span class="qs">
+						<h1>HELP NEEDED</h1>
+					</span>
+					
+				</div>
+				<div id="tourism_crickhowell">
+					<span class="qs">
+						1. Name the area;<br />
+						2. Describe the ways the environment is managed to reduce the pressure caused by visitors;<br />
+						3. Explain why this management is needed.<br />
+					</span>
+				</div>
+				<div id="boscastle_flood">
+					
+				</div>
+				<div id="boscastle_mgmt">
+				
+				</div>
+				<div id="holderness_coast">
+					<span class="qs">
+						1. Name the area;<br />
+						2. Describe the physical features of the coast;<br />
+						3. Explain how they are used by different groups of people.<br />
+					</span>
+					<p class="csd">
+						The Holderness Coast is located on the East coast of England. It extends 61km from Flamborough in the North to Spurn Point in the South.<br /><br />
+						The Holderness Coastline is one of Europe's fastest eroding coastlines with an average annual rate of erosion at around 2 meters per year.
+						Underlying the Holderness coastline is bedrock made of Cretaceous chalk. The Holderness coastline is subject to coastal erosion and depositation e.g Flamborough has 
+						coastal erosion which leads to the formation of caves, arches and stacks. Finally, Spurn Point is a result of longshort drift on the Holderness coast and is
+						an excellent example of a split, around 3% of the material eroded from the Holderness coast is deposited here each year!<br /><br />
+						The Holderness Coastline is used for housing, especially in the village of Mappleton perched on a cliff top which measures approximately 50 properties.
+						The Holderness Coast also contains the Easington gas terminal which supplies 25% of Britain's gas. It is also used as a nature reserve as Spurn Point as aquatic wildlife
+						can easily be preserved there as well as unique habitats due to the defences which are in place. Finally the surroundng land is great for agriculture due to highly
+						fertile soil which is caused by mineral deposits by the sea.
+						<details><summary>Case Study Information</summary><p>Written by Fox Lang</p><p>[8/8 Marks]</p></details>
+					</p>
+				</div>
+				<div id="katrina_hurricane">
+					
+				</div>
+				<div id="amazon_rainforest">
+				
+				</div>
+				<div id="desertification">
+				
+				</div>
+				<div id="ebbwvale">
+					
+				</div>
+				<div id="continental_teaves">
+				
+				</div>
+				<div id="tourism_kenya">
+				
+				</div>
+				<div id="climate_change">
+					<span class="qs">
+						1. Explain why there are differing views about how climate change can be managed;<br />
+						2. Describe the attempts to manage climate change at the local scale.<br />
+					</span>
+					<p class="csd">
+						There are some differing views about how climate change should be managed. For instance some people believe that Climate change is not a result of human intervention and the industrial revolution.
+						They believe that it's a natural cycle that occurs on Earth and that we cannot affect it in any way and should therefore not bother with management. <s>There are some who believe that it's a hoax by
+						the Chinese to steal American jobs.</s> Some think that Eco energy (e.g Solar Panels, Wind farms and Hydro-Electric power) is too costly to utilise, compared to non-renewable sources such as coal and gas.
+						However, others think that us humans caused a massive increase in <abbr title="Carbon Dioxide">CO<sub>2</sub></abbr> in the atmosphere and so therefore should do everything possible to manage climate change,
+						e.g. Renewable energy sources, recyling materials, use of public transport over a car.<br /><br />
+						Attempts to manage climate change at a local scale are numerous, even our school has done it. Ways of managing climate change include installation of solar panels to decrease reliance on fossil fuel
+						generated energy. There is also increased wall/roof/window insulation which keeps heat inside, reducing energy loss, which in turn, reduces your <abbr title="Carbon Dioxide">CO<sub>2</sub></abbr> footprint.
+						There is also encouragement to use public transport like buses or trains, instead of relying on cars for transport over long distances, over shorter distances you could just walk.
+						<details><summary>Case Study Information</summary><p>Written by Rhys Goodwin<br />Edited by: The Chinese</p><p>[8/8 Marks]</p></details>
+					</p>
+				</div>
+				<div id="katse_dam">
+				
+				</div>
+				<div id="international_aid">
+				
+				</div>
+			</div>
+		</div>
+		
+		<div id="cv_cs" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span id="close_cs">&times;</span>
+					<h2 id="cs_nm">Case study name</h2>
+				</div>
+				<div class="modal-body" id="cs_cont">
+					<p>Something went wrong...</p>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript">
+		var mhbg = ["#e63535","#e6be35","#3565e6","#a835e6","#35e649"];
+		var mhbi = 0;
+			
+		$("#close_cs").click(function(){
+			window.location.href = "#";
+			$("#cv_cs").fadeOut(500);
+			$("#casestudies").fadeIn(500);
+			setTimeout(function(){
+				$(".modal-header").css("background",mhbg[mhbi]);
+				(mhbi > 3 ? mhbi = 0 : mhbi++);
+			},500);
+		});
+		
+		$(".case_click").each(function(){
+			$(this).click(function(){
+				var c = $(this).data("opens");
+				console.log("Clicked: " + c);
+				window.location.href = "#" + c;
+				if ($("#" + c).text().trim().length < 5) alert("No case study found");
+				
+				$("#casestudies").fadeOut(200);
+				$("#cv_cs").show();
+				$("#cs_cont").html($("#" + c).html());
+				$("#cs_nm").html($("#t_" + c).text());
+				setTimeout(function(){window.scrollTo(0,0);},100);
+			});
+		});
+		
+		var type = window.location.hash.substr(1);
+		if (type.length > 1){
+			$("#casestudies").fadeOut(200);
+			$("#cv_cs").show();
+			$("#cs_cont").html($("#" + type).html());
+			$("#cs_nm").html($("#t_" + type).text());
+		}
+		</script>
+		
+	</body>
+</html>
