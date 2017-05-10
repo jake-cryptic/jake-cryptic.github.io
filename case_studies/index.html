@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<div id="page">
-			<h1 class="pt">Geography Case Studies</h1>
+			<h1 class="pt case_click" id="ptt" data-opens="information">Geography Case Studies (Click me)</h1>
 			<table id="casestudies">
 				<thead>
 					<tr>
@@ -460,6 +460,19 @@
 						<details><summary>Case Study Information</summary><p>Written by Ben Southwick</p><p>[8/8 Marks]</p></details>
 					</p>
 				</div>
+				<div id="information">
+					<h2>Hello! This is the Geography Case Study Site!</h2>
+					<p class="int">
+						Case studies likely to come up for theme 1:<br />
+						<a href="?#qol_cardiff">Quality of Life in Cardiff</a>, <a href="?#bay_cardiff">Cardiff Bay</a>, <a href="?#cwrtygollen">Cwrt-Y-Gollen</a>.<br /><br />
+						Case studies likely to come up for theme 2:<br />
+						<a href="?#desertification">Desertification</a>, <a href="?#amazon_rainforest">Amazon Rainforest</a>.<br /><br />
+						Case studies likely to come up for theme 3:<br />
+						<a href="?#international_aid">Aid in Kenya</a>, <a href="?#ebbwvale">Ebbw-Vale Steelworks</a>.<br /><br />
+						
+						Remember this is just a guide and is not 100% accurate.
+					</p>
+				</div>
 			</div>
 		</div>
 		
@@ -537,6 +550,10 @@
 				$("#cs_nm").html($("#t_" + type).text());
 			}
 		}
+		
+		setTimeout(function(){
+			$("#ptt").text("Geography Case Studies");
+		},8000);
 		</script>
 		
 	</body>
