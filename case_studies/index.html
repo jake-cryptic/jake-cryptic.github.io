@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<div id="page">
-			<h1 class="pt">Geography Case Studies</h1>
+			<h1 class="pt case_click" id="ptt" data-opens="information">Geography Case Studies (Click me)</h1>
 			<table id="casestudies">
 				<thead>
 					<tr>
@@ -444,7 +444,52 @@
 					</p>
 				</div>
 				<div id="international_aid">
-				
+					Kenya, a country in the east of Africa, has recently been given aid from three main sources.
+Firstly, France provided bilateral aid in the form of a loan of $500 million to Kenya to build the
+Turkwel dam, a huge dam built on the river Turkwel. This huge dam that has a height of 153
+metres and a total capacity of 170,000m3 and supports the Turkwel power plant, a huge power
+plant that is the third-largest in Kenya and has an electric capacity of 106 MW. This form of aid
+was required in order to provide more power to the country, increasing the rate at which Kenya
+can develop. In some ways, this aid was successful. It provided nearby villages with a supply of
+fresh water which greatly reduced the prevalence of diseases such as cholera in the area,
+provided electricity to light local towns in the dark nights and was able to generate 106MW of
+electricity. However, due to corruption in the time of planning, the wrong rainfall statistics were
+used which meant that the dam has never run to its full capacity. Also, the loan repayments and
+interest that Kenya now owes to France are estimated to account for around a third of all the
+country's depts, meaning that they have very little money left to spend.
+The second source of aid was the charity Christian Aid. This charity provided emergency aid in
+the form of supplies and money in the wake of a devastating flood in Rift Valley. Aid was needed
+here as 200 families were made homeless, several people died, numerous water-borne diseased
+such as cholera and typhoid spread rapidly and hospitals rapidly became full to capacity. This
+aid included the provision of tens of thousands of dollars worth of sacks of corn, clothing,
+malaria nets and medical supplies. This allowed people to recover from the disaster, preventing
+the spread of water-borne diseases and helping people to recover from the incident. However,
+one down side was that local farmers who were unaffected struggled to compete with others
+benefitting from the free supplies that were handed out.
+The final type of aid given was multilateral aid given by the World Bank in the form of a $100
+million loan to invest in developing their sugar refining industry. This was needed as it would
+boost the money in the economy where currently there was a dangerously high level of poverty,
+with many people struggling to pay for essential things such as food, medicine and education.
+With sugar being one of Kenya's main food crop exports, this was, at least for the first few years,
+extremely helpful, allowing 15,000 sugar farmers to be employed who all benefitted who were
+all able to sell their sugar for a good price as Kenya exported the finished product. However,
+there were numerous issues involved with the scheme. The refinery closed down after a few
+years as it was too expensive to maintain due to costs of importing machinery and the lack of
+skilled local labour. This caused all the farmers involved in the scheme to suffer hugely, as they
+lost income and were left without a means of survival.
+				</div>
+				<div id="information">
+					<h2>Hello! This is the Geography Case Study Site!</h2>
+					<p class="int">
+						Case studies likely to come up for theme 1:<br />
+						<a href="?#qol_cardiff">Quality of Life in Cardiff</a>, <a href="?#bay_cardiff">Cardiff Bay</a>, <a href="?#cwrtygollen">Cwrt-Y-Gollen</a>.<br /><br />
+						Case studies likely to come up for theme 2:<br />
+						<a href="?#desertification">Desertification</a>, <a href="?#amazon_rainforest">Amazon Rainforest</a>.<br /><br />
+						Case studies likely to come up for theme 3:<br />
+						<a href="?#international_aid">Aid in Kenya</a>, <a href="?#ebbwvale">Ebbw-Vale Steelworks</a>.<br /><br />
+						
+						Remember this is just a guide and is not 100% accurate.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -523,6 +568,10 @@
 				$("#cs_nm").html($("#t_" + type).text());
 			}
 		}
+		
+		setTimeout(function(){
+			$("#ptt").text("Geography Case Studies");
+		},8000);
 		</script>
 		
 	</body>
