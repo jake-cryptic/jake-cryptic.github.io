@@ -107,6 +107,16 @@
 				<input type="text" name="q28" class="iron" /><br /><br />
 				<label for="q29">What does S.M.A.R.T stand for?</label>
 				<input type="text" name="q29" class="iron" /><br /><br />
+				<label for="q30">What does AES stand for?</label>
+				<input type="text" name="q30" class="iron" /><br /><br />
+				<label for="q31">What does NAT stand for?</label>
+				<input type="text" name="q31" class="iron" /><br /><br />
+				<label for="q32">What does NTP stand for?</label>
+				<input type="text" name="q32" class="iron" /><br /><br />
+				<label for="q33">What does WPA stand for?</label>
+				<input type="text" name="q33" class="iron" /><br /><br />
+				<label for="q34">What does WEP stand for?</label>
+				<input type="text" name="q34" class="iron" /><br /><br />
 				<input type="submit" value="Check Answers" />
 			</form>
 		</div>
@@ -142,7 +152,12 @@
 			"hard disk drive",
 			"solid state drive",
 			"input output",
-			"self monitoring analysis reporting technology"
+			"self monitoring analysis reporting technology",
+			"advanced encryption standard",
+			"network address translation",
+			"network time protocol",
+			"wi fi protected access",
+			"wired equivalent privacy"
 		];
 		var x = 0;
 		
@@ -154,7 +169,7 @@
 				$(".iron").each(function(){
 					var qn = $(this).attr("name").substr(1,$(this).attr("name").length);
 					console.log(a[parseInt(qn)-1]);
-					if ($(this).val().toLowerCase().replace("-"," ").replace("/"," ").replace(" and "," ") == a[parseInt(qn)-1]){
+					if ($(this).val().toLowerCase().replace("-"," ").replace("/"," ").replace(" and "," ").replace("wifi","wi fi") == a[parseInt(qn)-1]){
 						$(this).css({
 							"background":"rgba(0,255,0,0.5)",
 							"color":"#fff",
