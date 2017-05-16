@@ -103,6 +103,8 @@
 				<input type="text" name="q26" class="iron" /><br /><br />
 				<label for="q27">What does SSD stand for?</label>
 				<input type="text" name="q27" class="iron" /><br /><br />
+				<label for="q28">What does I/O stand for?</label>
+				<input type="text" name="q28" class="iron" /><br /><br />
 				<input type="submit" value="Check Answers" />
 			</form>
 		</div>
@@ -136,7 +138,8 @@
 			"graphics processing unit",
 			"high definition multimedia interface",
 			"hard disk drive",
-			"solid state drive"
+			"solid state drive",
+			"input output"
 		];
 		var x = 0;
 		
@@ -148,7 +151,7 @@
 				$(".iron").each(function(){
 					var qn = $(this).attr("name").substr(1,$(this).attr("name").length);
 					console.log(a[parseInt(qn)-1]);
-					if ($(this).val().toLowerCase().replace("-"," ") == a[parseInt(qn)-1]){
+					if ($(this).val().toLowerCase().replace("-"," ").replace("/"," ") == a[parseInt(qn)-1]){
 						$(this).css({
 							"background":"rgba(0,255,0,0.5)",
 							"color":"#fff",
