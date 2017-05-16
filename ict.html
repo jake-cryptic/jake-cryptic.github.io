@@ -87,6 +87,22 @@
 				<input type="text" name="q18" class="iron" /><br /><br />
 				<label for="q19">What does ISP stand for?</label>
 				<input type="text" name="q19" class="iron" /><br /><br />
+				<label for="q20">What does HSPA stand for?</label>
+				<input type="text" name="q20" class="iron" /><br /><br />
+				<label for="q21">What does GPRS stand for?</label>
+				<input type="text" name="q21" class="iron" /><br /><br />
+				<label for="q22">What does MAC stand for?</label>
+				<input type="text" name="q22" class="iron" /><br /><br />
+				<label for="q23">What does CD stand for?</label>
+				<input type="text" name="q23" class="iron" /><br /><br />
+				<label for="q24">What does GPU stand for?</label>
+				<input type="text" name="q24" class="iron" /><br /><br />
+				<label for="q25">What does HDMI stand for?</label>
+				<input type="text" name="q25" class="iron" /><br /><br />
+				<label for="q26">What does HDD stand for?</label>
+				<input type="text" name="q26" class="iron" /><br /><br />
+				<label for="q27">What does SSD stand for?</label>
+				<input type="text" name="q27" class="iron" /><br /><br />
 				<input type="submit" value="Check Answers" />
 			</form>
 		</div>
@@ -112,7 +128,15 @@
 			"transport layer security",
 			"secure sockets layer",
 			"mobile network operator",
-			"internet service provider"
+			"internet service provider",
+			"high speed packet access",
+			"general packet radio service",
+			"media access control",
+			"compact disk",
+			"graphics processing unit",
+			"high definition multimedia interface",
+			"hard disk drive",
+			"solid state drive"
 		];
 		var x = 0;
 		
@@ -123,8 +147,8 @@
 				var g = 0;
 				$(".iron").each(function(){
 					var qn = $(this).attr("name").substr(1,$(this).attr("name").length);
-					console.log(a[parseInt(qn)]);
-					if ($(this).val().toLowerCase() == a[parseInt(qn)-1]){
+					console.log(a[parseInt(qn)-1]);
+					if ($(this).val().toLowerCase().replace("-"," ") == a[parseInt(qn)-1]){
 						$(this).css({
 							"background":"rgba(0,255,0,0.5)",
 							"color":"#fff",
@@ -134,7 +158,7 @@
 							"background":"rgba(255,0,0,0.5)",
 							"color":"#fff",
 						});
-						$("#page_title").html("You got " + (g++) + " wrong");
+						$("#page_title").html("You got " + (++g) + " wrong");
 					}
 				});
 			});
