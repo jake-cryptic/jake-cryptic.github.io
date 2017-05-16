@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Revision for the short one</title>
+		
+		<meta http-equiv="content-language" content="en" />
+		<meta name="author" content="Jake Mcneill" />
+		
+		<style type="text/css">
+		body {
+			margin:0;
+			padding:0;
+			background-color:#1A1A1A;
+			color:#fff;
+			font-family:sans-serif;
+			font-size:1.3em;
+		}
+		#container {
+			margin:2.5% 5%;
+		}
+		input[type="text"] {
+			width:96%;
+			padding:6px 2%;
+			height:1.6em;
+			margin: 0;
+			font-size:16px;
+			line-height:1.9em;
+			color:#555;
+			background-color:#fff;
+			background-image:none;
+			border:0px solid #ccc;
+			border-radius:0;
+			-webkit-box-shadow:inset 1px 1px 1px rgba(0,0,0,.075);
+			box-shadow:inset 1px 1px 1px rgba(0,0,0,.075);
+			-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+			-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+			transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		}
+		#page_title {
+			text-align:center;
+			font-size:1.8em;
+			padding-bottom:10px;
+		}
+		</style>
+	</head>
+	<body>
+	
+		<div id="container">
+			<div id="page_title">Rebecca Can't ICT</div>
+			<form id="quiz" method="post" action="#" name="quiz">
+				<label for="q1">What does HTTP stand for?</label>
+				<input type="text" name="q1" class="iron" /><br /><br />
+				<label for="q2">What does FTP stand for?</label>
+				<input type="text" name="q2" class="iron" /><br /><br />
+				<label for="q3">What does CPU stand for?</label>
+				<input type="text" name="q3" class="iron" /><br /><br />
+				<label for="q4">What does RAM stand for?</label>
+				<input type="text" name="q4" class="iron" /><br /><br />
+				<label for="q5">What does IMAP stand for?</label>
+				<input type="text" name="q5" class="iron" /><br /><br />
+				<label for="q6">What does POP stand for?</label>
+				<input type="text" name="q6" class="iron" /><br /><br />
+				<label for="q7">What does SMTP stand for?</label>
+				<input type="text" name="q7" class="iron" /><br /><br />
+				<label for="q8">What does HTTPS stand for?</label>
+				<input type="text" name="q8" class="iron" /><br /><br />
+				<label for="q9">What does HTML stand for?</label>
+				<input type="text" name="q9" class="iron" /><br /><br />
+				<label for="q10">What does USB stand for?</label>
+				<input type="text" name="q10" class="iron" /><br /><br />
+				<label for="q11">What does UMTS stand for?</label>
+				<input type="text" name="q11" class="iron" /><br /><br />
+				<label for="q12">What does GPS stand for?</label>
+				<input type="text" name="q12" class="iron" /><br /><br />
+				<label for="q13">What does LTE stand for?</label>
+				<input type="text" name="q13" class="iron" /><br /><br />
+				<label for="q14">What does PC stand for?</label>
+				<input type="text" name="q14" class="iron" /><br /><br />
+				<input type="submit" value="Check Answers" />
+			</form>
+		</div>
+		
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		var a = [
+			"hyper text transfer protocol",
+			"file transfer protocol",
+			"central processing unit",
+			"random access memory",
+			"internet message access protocol",
+			"post office protocol",
+			"simple mail transfer protocol",
+			"hyper text transfer protocol secure",
+			"hyper text markup language",
+			"universal serial bus",
+			"universal mobile telecommunications system",
+			"global positioning system",
+			"long term evolution",
+			"personal computer"
+		];
+		
+		$(document).ready(function(){
+			$("#quiz").on("submit",function(e){
+				e.preventDefault();
+				
+				$(".iron").each(function(){
+					var qn = $(this).attr("name").substr(1,$(this).attr("name").length);
+					console.log(a[parseInt(qn)]);
+					if ($(this).val().toLowerCase() == a[parseInt(qn)-1]){
+						$(this).css({
+							"background":"rgba(0,255,0,0.5)",
+							"color":"#fff",
+						});
+					} else {
+						$(this).css({
+							"background":"rgba(255,0,0,0.5)",
+							"color":"#fff",
+						});
+					}
+				});
+			});
+		});
+		</script>
+	
+	</body>
+</html>
